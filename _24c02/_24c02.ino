@@ -53,9 +53,9 @@
 
 
 #include <Wire.h>                           //libreria per l'utilizzo del protocollo I2C
-byte addr1=0x00, addr2=0x08 ;               //Indirizzi della memoria incui scrivere i dati
+byte addr1=0x00, addr2=0x08 ;               //Indirizzi della memoria in cui scrivere i dati
 int len=4;                                  //lunghezza dati da scrivere (leggere)
-byte read_val=4;                            //valore da letto
+byte read_val=0;                            //valore letto
 byte cod_1[4]={0x0C, 0x01, 0x0A, 0x00};     //CODICI DA SCRIVERE (E CONTROLLARE) IN addr1, la lunghezza dell'array deve essere uguale a len
 byte cod_2[4]={0x0C, 0x01, 0x0A, 0x00};     //CODICI DA SCRIVERE (E CONTROLLARE) IN addr2, la lunghezza dell'array deve essere uguale a len
 char i=0;                                   //
